@@ -1,0 +1,10 @@
+In [ 1]:
+folder = 'Grizzly Bear.log'
+file = 'urls_Grizzly Bear.log .csv'
+path = Path('data/bears')
+dest = path/folder
+dest.mkdir(parents=True, exist_ok=True)
+In [ ]:
+download_images(path/file, dest, max_pics=200)
+100.00% [200/200 00:12<00:00]
+Error https://npn-ndfapda.netdna-ssl.com/original/2X/9/973877494e28bd274c535610ffa8e262f7dcd0f2.jpeg HTTPSConnectionPool(host='npn-ndfapda.netdna-ssl.com', port=443): Max retries exceeded with url: /original/2X/9/973877494e28bd274c535610ffa8e262f7dcd0f2.jpeg (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f2f7c168f60>: Failed to establish a new connection: [Errno -2] Name or service not known'))
